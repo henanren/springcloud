@@ -37,4 +37,13 @@
 		 
 	</build>
 	
+	<modules>
+   <module>spring-cloud-eureka-provider-1</module>
+     <module>spring-cloud-eureka-provider-2</module>
+     <module>spring-cloud-eureka-provider-3</module>
+     
+	 <module>spring-cloud-eureka-service</module>
+	 <module>spring-cloud-zuul-service</module>
+ </modules>
+	
 </project>
