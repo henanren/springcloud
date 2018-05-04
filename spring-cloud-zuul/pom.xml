@@ -6,7 +6,7 @@
 	<groupId>spring-cloud-zuul</groupId>
 	<artifactId>spring-cloud-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>spring-cloud-zuul</name>
 	<description>Zuul Service Demo project for Spring Boot</description>
