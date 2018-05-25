@@ -8,4 +8,4 @@ spring:
     name: eureka-provider
 
 server:
-  port: 8081
+  port: 8080

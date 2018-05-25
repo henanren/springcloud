@@ -1,4 +1,4 @@
-package io.ymq.example.eureka.server;
+package com.laomn.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
