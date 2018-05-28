@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.laomn</groupId>
-	<artifactId>spring-cloud-eureka-service</artifactId>
+	<artifactId>spring-cloud-eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
