@@ -1,4 +1,4 @@
-package io.ymq.example.feign.consumer;
+package com.laomn.feign.consumer;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @create 2017-12-06 15:13
  **/
 @FeignClient("eureka-provider")
-public interface  HomeClient {
+public interface HomeClient {
 
-    @GetMapping("/")
-    String consumer();
+	@GetMapping("/")
+	String consumer();
+
+	@GetMapping("/2")
+	String consumer2();
 }
