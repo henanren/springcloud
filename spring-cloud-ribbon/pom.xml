@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.laomn</groupId>
-	<artifactId>spring-cloud-feign</artifactId>
+	<artifactId>spring-cloud-ribbon</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
-	<name>spring-cloud-feign</name>
+	<name>spring-cloud-ribbon</name>
 	<description>feign Demo project for Spring Boot</description>
 
 	<parent>
@@ -38,12 +38,13 @@
 	</build>
 	
 	<modules>
-   <module>spring-cloud-eureka-feign-provider-1</module>
-     <module>spring-cloud-eureka-feign-provider-2</module>
-	 <module>spring-cloud-eureka-feign-provider-3</module>
-	 <module>spring-cloud-eureka-feign-server</module>
-	  <module>spring-cloud-feign-consumer</module>
-     
+   <module>spring-cloud-eureka-ribbon-provider-1</module>
+ 
+      <module>spring-cloud-eureka-ribbon-provider-2</module>
+	   <module>spring-cloud-eureka-ribbon-provider-3</module>
+	    <module>spring-cloud-eureka-ribbon-server</module>
+		 <module>spring-cloud-ribbon-consumer</module>
+		 
  </modules>
 	
 </project>

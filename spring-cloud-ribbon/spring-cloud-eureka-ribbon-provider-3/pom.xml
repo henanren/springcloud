@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.laomn</groupId>
-    <artifactId>spring-cloud-ribbon-consumer</artifactId>
+    <artifactId>spring-cloud-eureka-ribbon-provider-3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>spring-cloud-ribbon-consumer</name>
-    <description>Eureka Ribbon Consumer Demo project for Spring Boot</description>
+    <name>spring-cloud-eureka-ribbon-provider-3</name>
+    <description>Eureka Provider3 Demo project for Spring Boot</description>
 
- 	<parent>
+  	<parent>
 		 
 			<groupId>com.laomn</groupId>
 	<artifactId>spring-cloud-ribbon</artifactId>
@@ -20,20 +20,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Dalston.SR4</spring-cloud.version>
     </properties>
 
     <dependencies>
-        <!-- 客户端负载均衡 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -45,6 +39,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -67,5 +62,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
