@@ -1,12 +1,11 @@
 package com.laomn.eureka.provider;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class EurekaProviderApplication {
+public class EurekaProvider {
 
 	@Value("${server.port}")
 	String port;
@@ -19,10 +18,6 @@ public class EurekaProviderApplication {
 	@RequestMapping("/2")
 	public String Hello2() {
 		return "Hello 2 world ,port:" + port;
-	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(EurekaProviderApplication.class, args);
 	}
 
 }

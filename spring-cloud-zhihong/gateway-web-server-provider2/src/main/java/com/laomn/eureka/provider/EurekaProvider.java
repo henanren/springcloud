@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class EurekaProviderApplication {
+public class EurekaProvider {
 
 	@Value("${server.port}")
 	String port;
