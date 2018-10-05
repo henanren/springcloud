@@ -1,8 +1,10 @@
-package com.laomn.feign.consumer;
+package com.laomn.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.laomn.client.HomeClient;
 
 /**
  * 描述:调用提供者的 `home` 方法
