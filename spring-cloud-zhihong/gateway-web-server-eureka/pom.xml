@@ -53,7 +53,7 @@
 	</dependencyManagement>
 
 <build>
-		<finalName>gateway-thread-server</finalName>
+<!-- 		<finalName>gateway-thread-server</finalName> -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
