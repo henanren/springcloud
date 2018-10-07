@@ -9,8 +9,6 @@ import com.laomn.client.HomeClient;
 /**
  * 描述:调用提供者的 `home` 方法
  *
- * @author yanpenglei
- * @create 2017-12-06 15:26
  **/
 @RestController
 public class ConsumerController {
