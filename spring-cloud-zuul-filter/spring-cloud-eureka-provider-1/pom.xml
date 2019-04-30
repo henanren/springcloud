@@ -11,10 +11,10 @@
 	<name>spring-cloud-eureka-provider-1</name>
 	<description>Eureka provider1 Demo project for Spring Boot</description>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
+ 	<parent>
+		<groupId>spring-cloud-zuul-filter</groupId>
+		<artifactId>spring-cloud-zuul-filter</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 

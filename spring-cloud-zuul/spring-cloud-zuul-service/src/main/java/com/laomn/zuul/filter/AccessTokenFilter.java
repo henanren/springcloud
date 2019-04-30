@@ -1,12 +1,6 @@
 package com.laomn.zuul.filter;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.Charset;
-
 import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.util.StreamUtils;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -24,31 +18,32 @@ public class AccessTokenFilter extends ZuulFilter {
 		RequestContext ctx = RequestContext.getCurrentContext();
 		HttpServletRequest request = ctx.getRequest();
 
-		System.out.println(String.format("%s AccessTokenFilter request to %s", request.getMethod(),
-				request.getRequestURL().toString()));
-		try {
-
-			InputStream stream = ctx.getResponseDataStream();
-			String body = StreamUtils.copyToString(stream, Charset.forName("UTF-8"));
-			ctx.setResponseBody(body);
-			// if (StringUtils.isNotBlank(body)) {
-			// Gson gson = new Gson();
-			// @SuppressWarnings("unchecked")
-			// Map<String, String> result = gson.fromJson(body, Map.class);
-			// if (StringUtils.isNotBlank(result.get(tokenKey))) {
-			// AuthModel authResult = authApi.encodeToken(result.get(tokenKey));
-			// if (authResult.getStatus() != HttpServletResponse.SC_OK) {
-			// throw new IllegalArgumentException(authResult.getErrMsg());
-			// }
-			// String accessToken = authResult.getToken();
-			// result.put(tokenKey, accessToken);
-			// }
-			// body = gson.toJson(result);
-			// }
-			// ctx.setResponseBody(body);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		System.out.println(String.format("%s AccessTokenFilter request to %s", request.getMethod(), request
+				.getRequestURL().toString()));
+		// try {
+		//
+		// InputStream stream = ctx.getResponseDataStream();
+		// String body = StreamUtils.copyToString(stream,
+		// Charset.forName("UTF-8"));
+		// ctx.setResponseBody(body);
+		// if (StringUtils.isNotBlank(body)) {
+		// Gson gson = new Gson();
+		// @SuppressWarnings("unchecked")
+		// Map<String, String> result = gson.fromJson(body, Map.class);
+		// if (StringUtils.isNotBlank(result.get(tokenKey))) {
+		// AuthModel authResult = authApi.encodeToken(result.get(tokenKey));
+		// if (authResult.getStatus() != HttpServletResponse.SC_OK) {
+		// throw new IllegalArgumentException(authResult.getErrMsg());
+		// }
+		// String accessToken = authResult.getToken();
+		// result.put(tokenKey, accessToken);
+		// }
+		// body = gson.toJson(result);
+		// }
+		// ctx.setResponseBody(body);
+		// } catch (IOException e) {
+		// e.printStackTrace();
+		// }
 
 		// 输出最终结果
 		return null;
